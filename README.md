@@ -3,17 +3,17 @@
 
 ### build docker image
 ```
-docker build -t demo-site:latest .
+docker build -t demo-beef:latest .
 ```
 
 ### create docker container
 ```
-docker run --rm -d -p 8080:80 --name demo-site demo-site:latest
+docker run --rm -d -p 8080:80 --name demo-beef demo-beef:latest
 ```
 
 ### start docker conatiner
 ```
-docker start demo-site
+docker start demo-beef
 ```
 
 ---
