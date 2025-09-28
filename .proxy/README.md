@@ -1,13 +1,25 @@
-# ngix reverse proxy to avoid hook cors error
+# Docker Nginx Reverse Proxy pour BeEF
 
-### Démarrer nginx avec Docker Compose
+Ce projet fournit une configuration Nginx en tant que reverse proxy pour BeEF, afin de faciliter la gestion des requêtes CORS et de sécuriser l'accès à l'interface de BeEF. Ce fichier README détaille les étapes pour construire et démarrer le conteneur Nginx avec Docker.
 
-Si tu as déjà configuré le fichier docker-compose.yml et nginx.conf, il te suffit de démarrer nginx avec la commande suivante :
+## Prérequis
 
+Docker installé sur votre machine.
+
+Une instance de BeEF en cours d'exécution (sur un autre conteneur ou machine).
+
+
+### build docker image
 ```
-docker-compose up -d
+docker build -t nginx-reverse-proxy:latest .
 ```
 
-Cela va :
-    - Créer et démarrer un conteneur nginx avec le reverse proxy.
-    - Le conteneur nginx écoutera sur le port 80 et redirigera les requêtes vers ton conteneur BeEF.
+### create docker container
+```
+docker run --rm -d -p 80:80 --name nginx-reverse-proxy
+```
+
+### start docker conatiner
+```
+docker start nginx-reverse-proxy
+```
